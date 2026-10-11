@@ -82,6 +82,7 @@
     userId() { return session()?.user?.id || null; },
     async saveProfile(profile) { await saving.catch(() => {}); return action('profile', { method: 'POST', body: { profile } }); },
     save,
+    async saveProfile(profile) { await saving.catch(() => {}); return action('profile', { method: 'POST', body: { profile } }); },
     async flush() { clearTimeout(timer); await saving.catch(() => {}); }
   };
 })();
