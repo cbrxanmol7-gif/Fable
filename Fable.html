@@ -122,6 +122,7 @@ html{background:var(--bg)}body{position:relative;isolation:isolate;background:tr
 <script src="/backend.js"></script>
 <script>
 
+let F={mode:'new',pStep:0,st:'land',react:'',hist:[],congratsNew:false,emailError:'',email:'',termsAccepted:false,termsError:'',otpLoading:false,legalReturn:'land',signInFlow:false,otpError:'',otp:'',otpVerified:false};
 const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const TERMS_VERSION='2026-10-11-v1',PRIVACY_VERSION='2026-10-11-v1';
