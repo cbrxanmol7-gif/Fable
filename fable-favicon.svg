@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Fable favicon</title>
+  <desc id="desc">A pale letter F with open-book pages and a small sparkle on a crimson rounded-square background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C6284B"/><stop offset="1" stop-color="#401522"/></linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="31" fill="url(#bg)"/>
+  <path d="M45 25h47v11H59v17h27v11H59v25H45z" fill="#FFF1F5"/>
+  <path d="M98 20l3.2 6.8 6.8 3.2-6.8 3.2L98 40l-3.2-6.8L88 30l6.8-3.2z" fill="#F4A6C1"/>
+  <path d="M39 93c8-3 17-2 25 3 8-5 17-6 25-3v9c-9-2-17-1-25 5-8-6-16-7-25-5z" fill="none" stroke="#F4A6C1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+  <path d="M64 96v11" fill="none" stroke="#F4A6C1" stroke-linecap="round" stroke-width="3"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+  <title id="title">Fable logo</title><desc id="desc">The Fable wordmark paired with its F, open-book and sparkle symbol.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C6284B"/><stop offset="1" stop-color="#401522"/></linearGradient></defs>
+  <g transform="translate(8 10)"><rect x="4" y="4" width="128" height="128" rx="33" fill="url(#bg)"/><path d="M45 25h47v11H59v17h27v11H59v25H45z" fill="#FFF1F5"/><path d="M98 20l3.2 6.8 6.8 3.2-6.8 3.2L98 40l-3.2-6.8L88 30l6.8-3.2z" fill="#F4A6C1"/><path d="M39 93c8-3 17-2 25 3 8-5 17-6 25-3v9c-9-2-17-1-25 5-8-6-16-7-25-5zM64 96v11" fill="none" stroke="#F4A6C1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/></g>
+  <text x="164" y="105" fill="#401522" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" letter-spacing="-4">Fable</text>
+</svg>

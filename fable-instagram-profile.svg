@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+<title id="title">Fable Instagram profile logo</title><desc id="desc">Fable’s open-book F and sparkle mark in a rose medallion, centered for a circular profile crop.</desc>
+<defs>
+ <radialGradient id="canvas" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#FFFBFC"/><stop offset="1" stop-color="#F4A6C1"/></radialGradient>
+ <linearGradient id="badge" x1="15%" y1="10%" x2="90%" y2="100%"><stop offset="0" stop-color="#C6284B"/><stop offset="1" stop-color="#401522"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#401522" flood-opacity=".2"/></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#canvas)"/>
+<circle cx="540" cy="540" r="450" fill="none" stroke="#FFF1F5" stroke-width="10" opacity=".9"/>
+<circle cx="540" cy="540" r="425" fill="url(#badge)" stroke="#F4A6C1" stroke-width="8" filter="url(#shadow)"/>
+<g transform="translate(92 92) scale(7)" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M45 25h47v11H59v17h27v11H59v25H45z" fill="#FFF1F5"/>
+ <path d="M98 20l3.2 6.8 6.8 3.2-6.8 3.2L98 40l-3.2-6.8L88 30l6.8-3.2z" fill="#F4A6C1"/>
+ <path d="M39 93c8-3 17-2 25 3 8-5 17-6 25-3v9c-9-2-17-1-25 5-8-6-16-7-25-5zM64 96v11" fill="none" stroke="#F4A6C1" stroke-width="3.5"/>
+</g></svg>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><base href="/">
+  <meta name="theme-color" content="#fff4f6">
+  <title>404 — Fable</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./fable-favicon.svg" type="image/svg+xml"><link rel="icon" href="./fable-favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="./fable-favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="./fable-favicon.ico">
+  <link rel="apple-touch-icon" href="./fable-apple-touch-icon.png">
+  <style>
+    :root{color-scheme:light;--bg:#fff4f6;--surface:#fffbfc;--ink:#401522;--muted:#754d59;--rose:#c6284b;--pink:#f4a6c1;--border:#f0d5de;font-family:'Figtree','Segoe UI',sans-serif}*{box-sizing:border-box}html,body{min-height:100%;margin:0}body{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));color:var(--ink);background:radial-gradient(ellipse at 88% 12%,rgba(244,166,193,.32),transparent 38%),var(--bg)}main{width:min(100%,680px);padding:clamp(28px,7vw,64px);border:1px solid var(--border);border-radius:30px;background:rgba(255,251,252,.86);box-shadow:0 24px 70px rgba(91,18,41,.12);text-align:center}.brand{margin:0 0 46px;font-size:15px;font-weight:800;letter-spacing:.08em;text-align:left}.brand span{margin-left:9px;color:var(--muted);font-size:9px;letter-spacing:.16em}.code{margin:0;color:var(--rose);font-size:clamp(70px,18vw,130px);font-weight:800;line-height:.9;letter-spacing:-.08em}.eyebrow{margin:26px 0 8px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}h1{font-family:'Bricolage Grotesque','Segoe UI',sans-serif;margin:0;font-size:clamp(30px,6vw,44px);line-height:1.1;letter-spacing:-.04em}p{color:var(--muted);line-height:1.6}.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}a,button{min-height:48px;padding:13px 19px;border:1px solid var(--border);border-radius:14px;font:700 15px 'Figtree','Segoe UI',sans-serif;text-decoration:none;cursor:pointer;transition:transform .18s,background .18s}a{display:inline-grid;place-items:center;background:var(--rose);color:#fff;border-color:var(--rose)}button{background:var(--surface);color:var(--ink)}a:hover,button:hover{transform:translateY(-2px)}a:focus-visible,button:focus-visible{outline:3px solid var(--pink);outline-offset:3px}@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#210e16;--surface:#32131f;--ink:#fff1f5;--muted:#d1a8b5;--rose:#a51f3e;--pink:#f4a6c1;--border:#593141}body{background:radial-gradient(ellipse at 88% 12%,rgba(232,93,131,.2),transparent 38%),var(--bg)}main{background:rgba(50,19,31,.9);box-shadow:0 24px 70px rgba(0,0,0,.32)}button{background:#32131f;color:var(--ink)}}@media(max-width:420px){.brand{margin-bottom:34px}main{border-radius:24px}.actions{display:grid}.actions>*{width:100%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main aria-labelledby="title">
+    <p class="brand">FABLE <span>BLIND DATING</span></p>
+    <p class="code" aria-hidden="true">404</p>
+    <p class="eyebrow">A little detour</p>
+    <h1 id="title">Looks like you’re lost.</h1>
+    <p>Even the right people take a wrong turn sometimes.</p>
+    <div class="actions">
+      <a href="/Fable.html">Back to Home</a>
+      <button type="button" onclick="goBackSafely()">Go Back</button>
+    </div>
+  </main>
+  <script>
+    function goBackSafely(){
+      const home=new URL('Fable.html',document.baseURI).href;
+      if(history.length>1&&document.referrer){
+        try{const previous=new URL(document.referrer);if(previous.origin===location.origin){history.back();return}}catch{}
+      }
+      location.assign(home);
+    }
+  </script>
+</body>
+</html>
