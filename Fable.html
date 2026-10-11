@@ -122,6 +122,8 @@ html{background:var(--bg)}body{position:relative;isolation:isolate;background:tr
 <script src="/backend.js"></script>
 <script>
 
+
+const OTP_PROVIDER={request:(email,intent)=>FableBackend.auth.request(email,intent),verify:(email,code)=>FableBackend.auth.verify(email,code)};
 const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const TERMS_VERSION='2026-10-11-v1',PRIVACY_VERSION='2026-10-11-v1';
@@ -273,4 +275,3 @@ initTheme();FableBackend.restore().then(async data=>{if(data?.profile){let accep
 
 
 </script></body></html>
-f
