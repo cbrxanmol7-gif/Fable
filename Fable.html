@@ -122,10 +122,12 @@ html{background:var(--bg)}body{position:relative;isolation:isolate;background:tr
 <script src="/backend.js"></script>
 <script>
 
+const OTP_PROVIDER={request:(email,intent)=>FableBackend.auth.request(email,intent),verify:(email,code)=>FableBackend.auth.verify(email,code)};
 const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const TERMS_VERSION='2026-10-11-v1',PRIVACY_VERSION='2026-10-11-v1';
 let S={name:'',major:'',year:'',interests:[],intent:'',pron:'',gender:'',ver:{email:0,id:0,selfie:0},done:0,email:'',ans:{},seed:0,rx:{},feed:null,tab:'today',w:{classes:50,hobbies:50,values:50},hide:{},pr:['','',''],priv:{major:1,year:1,eph:0,ph:1},ph:[null,null,null],bd:{day:'',n:0,seen:[],cur:null,date:null,cool:0},sk:0,th:[],chat:null,mins:0,voice:0,blocked:[],profile:null,legalAcceptance:null,search:'',df:null};
+let F={mode:'new',pStep:0,st:'land',react:'',hist:[],congratsNew:false,emailError:'',email:'',termsAccepted:false,termsError:'',otpLoading:false,legalReturn:'land',signInFlow:false,otpError:'',otp:'',otpVerified:false};
 S.profile=makeProfile();S.df=defaultFilters();
 let LG=[{t:'Yesterday',a:'Suspended 24h',who:'Rohit_k',r:'Repeated unwanted messages after a block'}];
 function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.x);toast.x=setTimeout(()=>e.style.display='none',3600)}
@@ -273,4 +275,3 @@ initTheme();FableBackend.restore().then(async data=>{if(data?.profile){let accep
 
 
 </script></body></html>
-f
