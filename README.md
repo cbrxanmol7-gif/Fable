@@ -20,7 +20,7 @@ Voice/video calling is not implemented. Live message updates poll the API every 
 
 1. In Vercel, open project **fable-34iz** and install the **Supabase** integration from Marketplace. Create or connect its Supabase project. Select the same Vercel project when prompted.
 2. In Supabase, open **SQL Editor** and run `supabase/migrations/202610110001_fable_backend.sql` once. It creates the schema, access policies, RPCs, and a private photo bucket.
-3. In Supabase Auth, set the site URL to `https://fable-34iz.vercel.app` and add that URL plus your local preview URL to the redirect URL allowlist. Configure a custom SMTP sender for arbitrary student email addresses, set email OTP to six digits, and test mail delivery. Supabase's default email sender is not suitable for general student sign-in.
+3. In Supabase Auth, set the site URL to `https://fable-34iz.vercel.app` and allow that exact redirect URL. Configure custom SMTP for student email delivery. In the **Magic link or OTP** template, use `{{ .Token }}` to send a six-digit code; the app's sign-in screen verifies that code. The default template sends a link, and Supabase's default SMTP only delivers to pre-authorized team addresses.
 4. In Vercel **Settings → Environment Variables**, add the values below to Preview and Production. Values are available in Supabase **Project Settings → API**. Never add the secret key to browser code or commit it.
 5. Replace the operator, support, and privacy-contact placeholders in `Fable.html`. Review the privacy/legal wording and decide data retention and moderation coverage before allowing student sign-up.
 6. Add `FABLE_LIVE_ENABLED=true` in Vercel only after SMTP, legal details, and the migration are ready. Redeploy so the function receives the setting.
