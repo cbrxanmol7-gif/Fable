@@ -204,7 +204,7 @@ begin
    'bio',p->>'bio','flex',p->>'flex','interests',coalesce(p->'interests','[]'::jsonb),'int',coalesce(p->'interests','[]'::jsonb),
    'prompts',coalesce(p->'prompts','[]'::jsonb),'intentions',coalesce(p->'intentions','[]'::jsonb),'pets',coalesce(p->'pets','[]'::jsonb),
    'drinking',p->>'drinking','smoking',p->>'smoking','profileComplete',coalesce(p->'profileComplete','0'::jsonb),
-   'createdAt',p->>'createdAt','photos',case when show_photos then coalesce(p->'photos','[]'::jsonb) else '[]'::jsonb
+   'createdAt',p->>'createdAt','photos',case when show_photos then coalesce(p->'photos','[]'::jsonb) else '[]'::jsonb end
  );
 end $$;
 
